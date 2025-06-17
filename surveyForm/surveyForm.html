@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Survey Form!</h1>
+        <p id="description">
+            We need you to answer some interesting questions to complete the survey!
+        </p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name-label" id="name-label">First name:
+                    <input type="text" id="name" placeholder="Alex" required/>
+                </label>
+                <label for="email-label" id="email-label">Email:
+                    <input type="email" id="email" placeholder="alexrose@gmail.com" required/>
+                </label>
+                <label  for="number-label" id="number-label">Age in years:
+                    <input type="number" id="number" placeholder="23" min="1" max="120"/>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">
+                    Which programming language is the best in your opinion?
+                    <select id="dropdown">
+                        <option value="0">(select one)</option>
+                        <option value="1">C++</option>
+                        <option value="2">Python</option>
+                        <option value="3">Java</option>
+                        <option value="4">Ruby</option>
+                        <option value="5">C</option>
+                        <option value="6">other...</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>How many years have you been programming?</legend>
+                <label for="1y">
+                    <input id="1y" type="radio" name="atribute" value="0" checked> Less than a year
+                </label>
+                <label for="1y2y">
+                     <input id="1y2y" type="radio" name="atribute" value="1"> Between one and two years
+                </label>
+                <label for="2y4y">
+                    <input id="2y4y" type="radio" name="atribute" value="2"> Between two and four years
+                </label>
+                <label for="4y">
+                    <input id="4y" type="radio" name="atribute" value="3"> More than four years
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Which of the following IDE do you recommend?</legend>
+                <label for="vsc">
+                    <input id="vsc" type="checkbox" value="0" name="ide" checked/> Visual Studio Code
+                </label>
+                <label for="zinjai">
+                    <input id="zinjai" type="checkbox" value="1" name="ide"/> ZinjaI
+                </label>
+                <label for="eclipse">
+                    <input id="eclipse" type="checkbox" value="2" name="ide"/> Eclipse
+                </label>
+                <label for="intellij">
+                    <input id="intellij" type="checkbox" value="3" name="ide"/> IntelliJ IDEA
+                </label>
+                <label for="pycharm">
+                    <input id="pycharm" type="checkbox" value="4" name="ide"/> PyCharm 
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="biopro">Can you tell us how did you start programming?
+                </label>
+                <textarea id="biopro" class="biopro" name="biopro" placeholder="I started programming with C++..." rows="3" cols="50" required></textarea>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </body>
+</html>

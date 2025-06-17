@@ -1,0 +1,105 @@
+body {
+    font-family: Merriweather ;
+    color: #FFFFFF;
+    background-image: url("/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+}
+
+h1, p, form{
+    background-color: rgba(27, 27, 50, 0.8);
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+p{
+    font-size: 1.2rem;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    padding-top: 15px;
+}
+
+fieldset{
+    margin-bottom: 20px;
+    border-color: rgba(0,0,40,0.1);
+    border-radius: 10px;
+    border: none;
+}
+
+option{
+    font-family: Merriweather;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+legend{
+    font-size: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"]{
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+input[type="submit"]{
+    background-color: #00cc66;
+    color: black;
+    border: none;
+    display: block;
+    width: 30%;
+    font-size: 15px;
+    padding: 10px;
+    margin: 20px auto 0 auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+input[type="submit"]:hover{
+    background-color: #0055aa;
+}
+
+.biopro{
+    border-radius: 10px;
+    height: 75px;
+}
+
+form{
+    padding: 10px;
+}
+
+label[for="vsc"],
+label[for="zinjai"],
+label[for="eclipse"],
+label[for="intellij"],
+label[for="pycharm"],
+label[for="1y"],
+label[for="1y2y"],
+label[for="2y4y"],
+label[for="4y"]{
+    font-size: 17px;
+}
+
+textarea{
+    width: 100%;
+    height: 70px;
+}
+
